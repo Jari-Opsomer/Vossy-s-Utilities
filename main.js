@@ -13,19 +13,28 @@ client.once('ready', () => {
 
 // Only One Message
 
+
+const Discord = require('discord.js')
+
+const client = new Discord.Client()
+
+
+console.log('Receiving information from Discord') })
+
+
 client.on('message', (message) => {
 
-    message.guild.channels.find(channel => channel.name === '<#870624822303010866>')
-    
-    .overwritePermissions(message.author,{
-    
-    SEND_MESSAGES: false,
-    
-    })
-    
-    })
+message.guild.channels.find(x => x.name === '『🔥』one-message') 
 
-});
+.overwritePermissions(message.author,{
+
+SEND_MESSAGES: false,
+
+})
+
+})
+
+client.login("ODcxMDgwNjU2MDI3OTIyNDg1.YQWHFA.bnOYLNynW7saVnvokZds6shsyDY") 
 
 // Overige
 
