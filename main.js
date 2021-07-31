@@ -2,13 +2,13 @@ const botConfig = require('./botconfig.json');
 const Discord = require('discord.js');
 // const fs = require('fs');
 
-const bot = new Discord.Client();
-bot.commands = new Discord.Collection();
-bot.aliases = new Discord.Collection();
+const client = new Discord.Client();
+client.commands = new Discord.Collection();
+client.aliases = new Discord.Collection();
 
 // Only One Message
 
-bot.on('message', (message) => {
+client.on('message', (message) => {
 
     message.guild.channels.find(x => x.name === '<#870624822303010866>')
     
@@ -22,9 +22,9 @@ bot.on('message', (message) => {
 
 // Overige
 
-bot.once('ready', () => {
+client.once('ready', () => {
     console.log('Bot is online!');
 
 });
 
-bot.login(process.env.token);
+client.login(process.env.token);
