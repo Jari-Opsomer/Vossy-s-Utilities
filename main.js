@@ -8,7 +8,7 @@ bot.aliases = new Discord.Collection();
 
 // Only One Message
 
-client.on('message', (message) => {
+bot.on('message', (message) => {
 
     message.guild.channels.find(x => x.name === '<#870624822303010866>')
     
