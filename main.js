@@ -6,7 +6,7 @@ const bot = new discord.Client();
 bot.commands = new discord.Collection();
 bot.aliases = new discord.Collection();
 
-// When a member sends a message to the channel specified below we revoke his permission to write any further messages
+// Only One Message
 
 client.on('message', (message) => {
 
@@ -20,8 +20,11 @@ client.on('message', (message) => {
     
     })
 
+// Overige
+
 bot.once('ready', () => {
     console.log('Bot is online!');
+
 });
 
 bot.login(process.env.token);
