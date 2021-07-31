@@ -11,28 +11,11 @@ client.aliases = new Discord.Collection();
 client.once('ready', () => {
     console.log('Bot is online!');
 
+})
+
 // Only One Message
 
-
-const Discord = require('discord.js')
-
-const client = new Discord.Client()
-
-
-console.log('Receiving information from Discord') })
-
-
-client.on('message', (message) => {
-
-message.guild.channels.find(x => x.name === '『🔥』one-message') 
-
-.overwritePermissions(message.author,{
-
-SEND_MESSAGES: false,
-
-})
-
-})
+// Code hier
 
 // Overige
 
