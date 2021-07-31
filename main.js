@@ -34,8 +34,6 @@ SEND_MESSAGES: false,
 
 })
 
-client.login("ODcxMDgwNjU2MDI3OTIyNDg1.YQWHFA.bnOYLNynW7saVnvokZds6shsyDY") 
-
 // Overige
 
 client.login(process.env.token);
