@@ -1,16 +1,16 @@
-const botConfig = require("./botconfig.json");
-const discord = require("discord.js");
-const fs = require("fs");
+const botConfig = require('./botconfig.json');
+const Discord = require('discord.js');
+// const fs = require('fs');
 
-const bot = new discord.Client();
-bot.commands = new discord.Collection();
-bot.aliases = new discord.Collection();
+const bot = new Discord.Client();
+bot.commands = new Discord.Collection();
+bot.aliases = new Discord.Collection();
 
 // Only One Message
 
 client.on('message', (message) => {
 
-    message.guild.channels.find(x => x.name === '<#870624822303010866>') //Replace it with the name of the channel for which you need this feature
+    message.guild.channels.find(x => x.name === '<#870624822303010866>')
     
     .overwritePermissions(message.author,{
     
