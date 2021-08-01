@@ -8,6 +8,8 @@ const client = new Discord.Client();
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
+client.user.setStatus('online', 'VossyGamer#1234') 
+
 client.once('ready', () => {
     console.log('Bot is online!');
 
@@ -15,8 +17,8 @@ client.once('ready', () => {
 
 // Only One Message
 
-// Code hier
+// - Code hier -
 
 // Overige
 
-client.login(process.env.token);
+client.login(process.env.token)
