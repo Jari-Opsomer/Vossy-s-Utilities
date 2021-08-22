@@ -33,11 +33,12 @@ client.on("message", async message => {
         
             const embed = new Discord.MessageEmbed()
               .setTitle("Vossy's Utilities | Help")
+              .setDescription('Information about this bot.')
               // .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
               // .setAuthor(message.author.username)
               // .setImage(logo)
               .setThumbnail(logo)
-              .setFooter("Vossy's Utilities | By: VossyGamer#1234")
+              .setFooter("By: VossyGamer#1234")
               .setColor('#e47a00')
               .addFields(
                 {
@@ -62,6 +63,42 @@ client.on("message", async message => {
               )
         
             return message.channel.send(embed)}
+             
+    if (command === `${prefix}VossyGamer`) {
+        const logo =
+          'https://i.ibb.co/wRGQGVX/profile-pic-1.png'
+    
+        const embed = new Discord.MessageEmbed()
+          .setTitle("Vossy's Utilities | (Info) VossyGamer")
+          .setDescription('Information about VossyGamer.')
+          // .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
+          // .setAuthor(message.author.username)
+          // .setImage(logo)
+          .setThumbnail(logo)
+          .setFooter("By: VossyGamer#1234")
+          .setColor('#e47a00')
+          .addFields(
+            {
+              name: 'Discord Name:',
+              value: 'VossyGamer#1234',
+              inline: true,
+            },
+            {
+              name: 'Real Name:',
+              value: 'Jari ***',
+              inline: true,
+            },
+            {
+              name: 'Birthday:',
+              value: 'May 4th 2007',
+              inline: true,
+            },
+            {
+              name: 'More coming soon!',
+            }
+          )
+    
+        return message.channel.send(embed)}
 
     if (command === `${prefix}info`) 
  
