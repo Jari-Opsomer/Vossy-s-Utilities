@@ -19,7 +19,7 @@ client.on("message", async message => {
  
     if(message.author.bot) return;
  
-    if(message.channel.type === "dm") return;
+    // if(message.channel.type === "dm") return;
  
     var prefix = botConfig.prefix;
  
@@ -154,10 +154,9 @@ client.on("message", async message => {
 
         return message.channel.send("My **prefix** is `v!`!"); 
   
-    client.on('message', msg => {
-        if (msg.channel.type == "dm") {
-          msg.author.send("**I don't respond to DM's!**");
-          return;
+    client.on('message', async message => {
+      if (message.channel.type == 'dm') {
+          message.reply("**I don't reply to DM's!**");
         }
       });
 
