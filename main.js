@@ -37,7 +37,7 @@ client.on("message", async message => {
               // .setAuthor(message.author.username)
               // .setImage(logo)
               .setThumbnail(logo)
-              .setFooter("Vossy's Utilities")
+              .setFooter("Vossy's Utilities | By: VossyGamer#1234")
               .setColor('#e47a00')
               .addFields(
                 {
