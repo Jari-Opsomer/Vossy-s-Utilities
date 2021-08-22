@@ -33,7 +33,7 @@ client.on("message", async message => {
         
             const embed = new Discord.MessageEmbed()
               .setTitle("Vossy's Utilities | Help")
-              .setDescription('Information about this bot.\n')
+              .setDescription('Information about this bot.')
               // .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
               // .setAuthor(message.author.username)
               // .setImage(logo)
@@ -70,7 +70,7 @@ client.on("message", async message => {
     
         const embed = new Discord.MessageEmbed()
           .setTitle("Vossy's Utilities | (Info) VossyGamer")
-          .setDescription('Information about VossyGamer.\n')
+          .setDescription('Information about VossyGamer.')
           // .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
           // .setAuthor(message.author.username)
           // .setImage(logo)
@@ -95,7 +95,7 @@ client.on("message", async message => {
             },
             {
               name: 'More coming soon!',
-              value: '',
+              value: 'In the future..',
             }
           )
     
