@@ -11,7 +11,7 @@ client.aliases = new Discord.Collection();
 client.once('ready', () => {
     console.log(`${client.user.username} is online.`);
 
-client.user.setActivity("v!help", { type: "WATCHING" });
+client.user.setActivity("VossyGamer | v!help", { type: "WATCHING" });
 
 });
  
