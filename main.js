@@ -19,7 +19,7 @@ client.on("message", async message => {
  
     if(message.author.bot) return;
  
-    // if(message.channel.type === "dm") return;
+    if(message.channel.type === "dm") return;
  
     var prefix = botConfig.prefix;
  
@@ -154,11 +154,11 @@ client.on("message", async message => {
 
         return message.channel.send("My **prefix** is `v!`!"); 
   
-    client.on('message', async message => {
-      if (message.channel.type == 'dm') {
-          message.reply("**I don't reply to DM's!**");
-        }
-      });
+    // client.on('message', async message => {
+      // if (message.channel.type == 'dm') {
+          // message.reply("**I don't reply to DM's!**");
+        // }
+      // });
 
 // Afwerken: Bot wordt vermeldt door gebruiker -> Prefix wordt in bericht naar gebruiker gestuurd (zie hierboven)
 
