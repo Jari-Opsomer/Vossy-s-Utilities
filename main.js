@@ -153,6 +153,15 @@ client.on("message", async message => {
     if (command === `@Vossy's Utilities#6991`) 
 
         return message.channel.send("My **prefix** is `v!`!"); 
+  
+    client.on('message', msg => {
+        if (msg.channel.type == "dm") {
+          msg.author.send("**I don't respond to DM's!**");
+          return;
+        }
+      });
+
+// Afwerken: Bot wordt vermeldt door gebruiker -> Prefix wordt in bericht naar gebruiker gestuurd (zie hierboven)
 
 });
 
