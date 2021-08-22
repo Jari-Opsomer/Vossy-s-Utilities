@@ -29,13 +29,19 @@ client.on("message", async message => {
  
     if (command === `${prefix}help`) 
  
-        return message.channel.send("**Vossy's Utilities - Help:**\nA list with all commands.\n\n> `v!info` **Information about this bot.**\n> `v!invite` **The invite link of this bot.**");
+        return message.channel.send(
+
+        embed=discord.Embed(title="Vossy's Utilities | Help", description="Information about this bot.", color=0xe47a00),
+        embed.add_field(name="Commands:", value="`v!commands`", inline=True),
+        embed.add_field(name="(Info) VossyGamer:", value="`v!VossyGamer`", inline=True),
+        embed.set_footer(text="Vossy's Utilities "),
+        await ctx.send(embed=embed));
 
     if (command === `${prefix}info`) 
  
         return message.channel.send("This bot is made by **VossyGamer#1234**. More info coming soon!");
 
-    if (command === `${prefix}invite`) 
+    if (command === `${prefix}invite`)
  
         return message.channel.send("**> At the moment the bot is __private__, but in the future the bot may become public.**\n> Then the invite link will appear here!");
 
