@@ -154,11 +154,11 @@ client.on("message", async message => {
 
         return message.channel.send("My **prefix** is `v!`!"); 
   
-    client.on('message', async message => {
-      if (message.channel.type == 'dm') {
-          return message.reply("Type `v!help` sfor more information!");
-        }
-      });
+    // client.on('message', async message => {
+      // if (message.channel.type == 'dm') {
+          // return message.reply("Type `v!help` sfor more information!");
+        // }
+      // });
 
 // Afwerken: Bot wordt vermeldt door gebruiker -> Prefix wordt in bericht naar gebruiker gestuurd (zie hierboven)
 
