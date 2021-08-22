@@ -29,7 +29,7 @@ client.on("message", async message => {
  
     if (command === `${prefix}help`) 
  
-        return message.channel.send("**Vossy's Utilities - Help:\nA list with all commands.\n`v!info` **Information about this bot.**\n`v!invite` **The invite link for this bot.**");
+        return message.channel.send("**Vossy's Utilities - Help:**\nA list with all commands.\n\n`v!info` **Information about this bot.**\n`v!invite` **The invite link for this bot.**");
 
     if (command === `${prefix}info`) 
  
