@@ -27,12 +27,14 @@ client.on("message", async message => {
  
     var command = messageArray[0];
  
-    if (command === `${prefix}help`) {
+    if (command === `${prefix}help`) 
  
         return message.channel.send("Command coming soon!");
-    
-    }
- 
+
+    if (command === `${prefix}`) 
+
+        return message.channel.send("That's my prefix! :)"); 
+
 });
 
 // Only One Message
