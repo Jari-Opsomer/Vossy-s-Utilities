@@ -79,15 +79,15 @@ client.on("message", async message => {
               .setColor('#e47a00')
               .addFields(
                 {
-                  name: 'Commands:',
-                  value: '`v!commands`',
+                  name: 'Commands coming soon!',
+                  value: 'Just be patient..',
                   inline: true,
                 },
-                {
-                  name: '(Info) VossyGamer:',
-                  value: '`v!VossyGamer`',
-                  inline: true,
-                },
+                // {
+                  // name: '(Info) VossyGamer:',
+                  // value: '`v!VossyGamer`',
+                  // inline: true,
+                // },
                 // {
                   // name: 'Field 3',
                   // value: 'Hello world',
@@ -132,7 +132,7 @@ client.on("message", async message => {
             },
             {
               name: 'More coming soon!',
-              value: 'In the future..',
+              value: 'Just be patient..',
             }
           )
     
