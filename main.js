@@ -148,7 +148,11 @@ client.on("message", async message => {
 
     if (command === `${prefix}`) 
 
-        return message.channel.send("That's my prefix! :)"); 
+        return message.channel.send("That's my **prefix**! :)");
+
+    if (command === `@Vossy's Utilities#6991`) 
+
+        return message.channel.send("My **prefix** is `v!`!"); 
 
 });
 
