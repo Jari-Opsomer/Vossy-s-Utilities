@@ -27,15 +27,41 @@ client.on("message", async message => {
  
     var command = messageArray[0];
  
-    if (command === `${prefix}help`) 
- 
-        return message.channel.send(
-
-        embed=discord.Embed(title="Vossy's Utilities | Help", description="Information about this bot.", color=0xe47a00),
-        embed.add_field(name="Commands:", value="`v!commands`", inline=True),
-        embed.add_field(name="(Info) VossyGamer:", value="`v!VossyGamer`", inline=True),
-        embed.set_footer(text="Vossy's Utilities "),
-        await ctx.send(embed=embed));
+    if (command === `${prefix}help`) {
+            const logo =
+              'https://yt3.ggpht.com/a-/AOh14GgD43Ka7oxkCrxPAXiIuY8-rG3Kb4h9dQuhulOH=s100-c-k-c0xffffffff-no-rj-mo'
+        
+            const embed = new Discord.MessageEmbed()
+              .setTitle('Example text embed')
+              .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
+              .setAuthor(message.author.username)
+              .setImage(logo)
+              .setThumbnail(logo)
+              .setFooter('This is a footer')
+              .setColor('#00AAFF')
+              .addFields(
+                {
+                  name: 'Field 1',
+                  value: 'Hello world',
+                  inline: true,
+                },
+                {
+                  name: 'Field 2',
+                  value: 'Hello world',
+                  inline: true,
+                },
+                {
+                  name: 'Field 3',
+                  value: 'Hello world',
+                  inline: true,
+                },
+                {
+                  name: 'Field 4',
+                  value: 'Hello world',
+                }
+              )
+        
+            return message.channel.send(embed)}
 
     if (command === `${prefix}info`) 
  
