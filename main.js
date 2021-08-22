@@ -29,7 +29,7 @@ client.on("message", async message => {
  
     if (command === `${prefix}help`) 
  
-        return message.channel.send("**Vossy's Utilities - Help:**\nA list with all commands.\n\n`v!info` **Information about this bot.**\n`v!invite` **The invite link for this bot.**");
+        return message.channel.send("**Vossy's Utilities - Help:**\nA list with all commands.\n\n> `v!info` **Information about this bot.**\n>`v!invite` **The invite link of this bot.**");
 
     if (command === `${prefix}info`) 
  
@@ -37,7 +37,7 @@ client.on("message", async message => {
 
     if (command === `${prefix}invite`) 
  
-        return message.channel.send("**At the moment the bot is private, but in the future the bot may become public.** Then the invite link will appear here!");
+        return message.channel.send("**> At the moment the bot is __private__, but in the future the bot may become public.**\n> Then the invite link will appear here!");
 
     if (command === `${prefix}`) 
 
