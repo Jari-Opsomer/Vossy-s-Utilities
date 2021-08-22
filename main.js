@@ -9,22 +9,36 @@ client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
 client.once('ready', () => {
-    console.log('Bot is online!');
+    console.log(`${client.user.username} is online.`);
 
-})
+client.user.setActivity("v!help", { type: "WATCHING" });
+
+});
+ 
+client.on("message", async message => {
+ 
+    if(message.author.bot) return;
+ 
+    if(message.channel.type === "dm") return;
+ 
+    var prefix = botConfig.prefix;
+ 
+    var messageArray = message.content.split(" ");
+ 
+    var command = messageArray[0];
+ 
+    if (command === `${prefix}help`) {
+ 
+        return message.channel.send("Command coming soon!");
+    
+    }
+ 
+});
 
 // Only One Message
 
 // - Code hier -
 
 // Overige
-
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-
-    if message.content.startswith('v!help'):
-        await message.channel.send('Hello!')
 
 client.login(process.env.token)
