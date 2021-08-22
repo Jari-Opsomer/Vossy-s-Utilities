@@ -19,7 +19,7 @@ client.on("message", async message => {
  
     if(message.author.bot) return;
  
-    if(message.channel.type === "dm") return;
+    // if(message.channel.type === "dm") return;
  
     var prefix = botConfig.prefix;
  
