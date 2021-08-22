@@ -29,35 +29,35 @@ client.on("message", async message => {
  
     if (command === `${prefix}help`) {
             const logo =
-              'https://yt3.ggpht.com/a-/AOh14GgD43Ka7oxkCrxPAXiIuY8-rG3Kb4h9dQuhulOH=s100-c-k-c0xffffffff-no-rj-mo'
+              'https://i.ibb.co/wRGQGVX/profile-pic-1.png'
         
             const embed = new Discord.MessageEmbed()
-              .setTitle('Example text embed')
-              .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
-              .setAuthor(message.author.username)
+              .setTitle("Vossy's Utilities | Help")
+              // .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
+              // .setAuthor(message.author.username)
               .setImage(logo)
-              .setThumbnail(logo)
-              .setFooter('This is a footer')
-              .setColor('#00AAFF')
+              // .setThumbnail(logo)
+              .setFooter("Vossy's Utilities")
+              .setColor('#e47a00')
               .addFields(
                 {
-                  name: 'Field 1',
-                  value: 'Hello world',
+                  name: 'Commands:',
+                  value: '`v!commands`',
                   inline: true,
                 },
                 {
-                  name: 'Field 2',
-                  value: 'Hello world',
+                  name: '(Info) VossyGamer:',
+                  value: '`v!VossyGamer`',
                   inline: true,
                 },
                 {
-                  name: 'Field 3',
-                  value: 'Hello world',
-                  inline: true,
+                  // name: 'Field 3',
+                  // value: 'Hello world',
+                  // inline: true,
                 },
                 {
-                  name: 'Field 4',
-                  value: 'Hello world',
+                  // name: 'Field 4',
+                  // value: 'Hello world',
                 }
               )
         
