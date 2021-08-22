@@ -28,6 +28,7 @@ client.on("message", async message => {
     var command = messageArray[0];
  
     if (command === `${prefix}help`) {
+    if (command === `${prefix}Help`) 
             const logo =
               'https://i.ibb.co/wRGQGVX/profile-pic-1.png'
         
@@ -63,8 +64,47 @@ client.on("message", async message => {
               )
         
             return message.channel.send(embed)}
-             
+
+    if (command === `${prefix}commands`) {
+    if (command === `${prefix}Commands`) 
+            const logo =
+              'https://i.ibb.co/wRGQGVX/profile-pic-1.png'
+        
+            const embed = new Discord.MessageEmbed()
+              .setTitle("Vossy's Utilities | Commands")
+              .setDescription('All commands in this bot.')
+              // .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
+              // .setAuthor(message.author.username)
+              // .setImage(logo)
+              .setThumbnail(logo)
+              .setFooter("By: VossyGamer#1234")
+              .setColor('#e47a00')
+              .addFields(
+                {
+                  name: 'Commands:',
+                  value: '`v!commands`',
+                  inline: true,
+                },
+                {
+                  name: '(Info) VossyGamer:',
+                  value: '`v!VossyGamer`',
+                  inline: true,
+                },
+                // {
+                  // name: 'Field 3',
+                  // value: 'Hello world',
+                  // inline: true,
+                // },
+                // {
+                  // name: 'Field 4',
+                  // value: 'Hello world',
+                // }
+              )
+        
+            return message.channel.send(embed)}
+            
     if (command === `${prefix}VossyGamer`) {
+    if (command === `${prefix}vossygamer`) 
         const logo =
           'https://i.ibb.co/wRGQGVX/profile-pic-1.png'
     
