@@ -27,7 +27,7 @@ client.on("message", async message => {
  
     var command = messageArray[0];
  
-    if (command = `${prefix}help`) {
+    if (command === `${prefix}help`) {
             const logo =
               'https://i.ibb.co/wRGQGVX/profile-pic-1.png'
         
@@ -64,7 +64,7 @@ client.on("message", async message => {
         
             return message.channel.send(embed)}
              
-    if (command = `${prefix}VossyGamer`) {
+    if (command === `${prefix}VossyGamer`) {
         const logo =
           'https://i.ibb.co/wRGQGVX/profile-pic-1.png'
     
