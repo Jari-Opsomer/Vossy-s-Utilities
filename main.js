@@ -35,8 +35,8 @@ client.on("message", async message => {
               .setTitle("Vossy's Utilities | Help")
               // .setURL('https://www.youtube.com/channel/UChPrh75CmPP9Ig6jISPnfNA')
               // .setAuthor(message.author.username)
-              .setImage(logo)
-              // .setThumbnail(logo)
+              // .setImage(logo)
+              .setThumbnail(logo)
               .setFooter("Vossy's Utilities")
               .setColor('#e47a00')
               .addFields(
@@ -50,15 +50,15 @@ client.on("message", async message => {
                   value: '`v!VossyGamer`',
                   inline: true,
                 },
-                {
+                // {
                   // name: 'Field 3',
                   // value: 'Hello world',
                   // inline: true,
-                },
-                {
+                // },
+                // {
                   // name: 'Field 4',
                   // value: 'Hello world',
-                }
+                // }
               )
         
             return message.channel.send(embed)}
