@@ -19,4 +19,12 @@ client.once('ready', () => {
 
 // Overige
 
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.content.startswith('v!help'):
+        await message.channel.send('Hello!')
+
 client.login(process.env.token)
