@@ -158,16 +158,7 @@ client.on("message", async message => {
 
 // One Message Code in Flawned's Fan Club:
 
-client.on('message', (message) => {
-
-  message.guild.channels.find(x => x.name === '『🔥』one-message')
-  
-  .overwritePermissions(message.author,{
-  
-  SEND_MESSAGES: false,
-  
-  })
-});
+// MAKEN!
 
     // client.on('message', async message => {
       // if (message.channel.type == 'dm') {
