@@ -116,8 +116,8 @@ client.on("message", async message => {
           .setColor('#e47a00')
           .addFields(
             {
-              name: 'Discord Name:',
-              value: 'VossyGamer#1234',
+              name: 'Online Name:',
+              value: 'VossyGamer',
               inline: true,
             },
             {
@@ -157,7 +157,7 @@ client.on("message", async message => {
 client.on('message', async message => {
   if (message.channel.id === '880425196765450260') {
     try {
-      await message.react(':thumbsup:');
+      await message.react('👍');
     } catch(err) {
       console.error(err);
     }
