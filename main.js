@@ -155,7 +155,7 @@ client.on("message", async message => {
         return message.channel.send("My **prefix** is `v!`!"); 
       
 client.on('message', async message => {
-  if (message.channel.id === 880425196765450260) {
+  if (message.channel.id === '880425196765450260') {
     try {
       await message.react('✅');
       await message.react('✖');
