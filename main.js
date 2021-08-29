@@ -159,14 +159,14 @@ client.on("message", async message => {
 // One Message Code in Flawned's Fan Club:
 
 client.on("message", msg => {
-  var sender = msg.author;
-  var message= msg.content.toLowerCase();
+  var sender = msg.member;
+  var message = msg.content.toLowerCase();
 
   if (sender.id === "870624822303010866") {
     return;
   }
   if (message) {
-    msg.author.addRole("873291139040559115");
+    msg.member.addRole("873291139040559115");
   }
 });
 
