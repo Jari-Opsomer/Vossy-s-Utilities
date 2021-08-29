@@ -157,8 +157,7 @@ client.on("message", async message => {
 client.on('message', async message => {
   if (message.channel.id === '880425196765450260') {
     try {
-      await message.react('✅');
-      await message.react('✖');
+      await message.react(':thumbsup:');
     } catch(err) {
       console.error(err);
     }
