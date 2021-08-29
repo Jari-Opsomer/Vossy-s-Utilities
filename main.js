@@ -153,10 +153,21 @@ client.on("message", async message => {
     if (command === `@Vossy's Utilities#6991`) 
 
         return message.channel.send("My **prefix** is `v!`!"); 
-  
+      
+client.on('message', async message => {
+  if (message.channel.id === 880425196765450260) {
+    try {
+      await message.react('✅');
+      await message.react('✖');
+    } catch(err) {
+      console.error(err);
+    }
+  }
+});
+
     // client.on('message', async message => {
       // if (message.channel.type == 'dm') {
-          // return message.reply("Type `v!help` sfor more information!");
+          // return message.reply("Type `v!help` for more information!");
         // }
       // });
 
