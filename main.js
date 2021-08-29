@@ -161,7 +161,7 @@ client.on("message", async message => {
 client.on('message', async message => {
   if (message.channel.id === '870624822303010866') {
     try {
-      await msg.member.addRole("873291139040559115");
+      await message.member.addRole("873291139040559115");
     } catch(err) {
       console.error(err);
     }
