@@ -1,4 +1,4 @@
-// Standaard
+// Standaard instellingen:
 
 const botConfig = require('./botconfig.json');
 const Discord = require('discord.js');
@@ -14,7 +14,9 @@ client.once('ready', () => {
 client.user.setActivity("VossyGamer | v!help", { type: "WATCHING" });
 
 });
- 
+
+// Antwoorden (EMBED) op commando's:
+
 client.on("message", async message => {
  
     if(message.author.bot) return;
@@ -153,11 +155,13 @@ client.on("message", async message => {
     if (command === `@Vossy's Utilities#6991`) 
 
         return message.channel.send("My **prefix** is `v!`!"); 
-      
+
+// One Message Code in Flawned's Fan Club:
+
 client.on('message', async message => {
-  if (message.channel.id === '880425196765450260') {
+  if (message.channel.id === '870624822303010866') {
     try {
-      await message.react('👍');
+      await msg.member.addRole("873291139040559115");
     } catch(err) {
       console.error(err);
     }
@@ -173,10 +177,6 @@ client.on('message', async message => {
 // Afwerken: Bot wordt vermeldt door gebruiker -> Prefix wordt in bericht naar gebruiker gestuurd (zie hierboven)
 
 });
-
-// Only One Message
-
-// - Code hier -
 
 // Overige
 
