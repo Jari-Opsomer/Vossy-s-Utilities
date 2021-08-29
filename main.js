@@ -158,13 +158,15 @@ client.on("message", async message => {
 
 // One Message Code in Flawned's Fan Club:
 
-client.on('message', async message => {
-  if (message.channel.id === '870624822303010866') {
-    try {
-      await message.member.addRole("873291139040559115");
-    } catch(err) {
-      console.error(err);
-    }
+client.on("message", msg => {
+  var sender = msg.author;
+  var message= msg.content.toLowerCase();
+
+  if (sender.id === "870624822303010866") {
+    return;
+  }
+  if (message) {
+    msg.author.addRole("873291139040559115");
   }
 });
 
